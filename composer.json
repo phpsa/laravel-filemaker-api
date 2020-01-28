@@ -1,0 +1,51 @@
+{
+  "name": "phpsa/laravel-filemaker-api",
+  "description": "A laravel filemaker api",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "filemaker",
+    "api"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "illuminate/support": "^6.0",
+    "inter-mediator/fmdataapi":"20"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phpsa\\LaravelFilemakerApi\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phpsa\\LaravelFilemakerApi\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Phpsa\\LaravelFilemakerApi\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
